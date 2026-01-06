@@ -1,56 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/teron-holic/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teron-Holic — Практики применения ИИ для каждого</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/teron-holic/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/teron-holic/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/teron-holic/assets/styles-BfnS8lDd.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+          <a href="/" class="header__logo">
+              Teron-<span>Holic</span>
+          </a>
+
+          <ul class="header__menu">
+              <li><a href="#about" class="header__link">О платформе</a></li>
+              <li><a href="#benefits" class="header__link">Возможности</a></li>
+              <li><a href="#innovations" class="header__link">Инновации</a></li>
+              <li><a href="#blog" class="header__link">Практики</a></li>
+              <li><a href="#contact" class="header__link">Контакты</a></li>
+          </ul>
+
+          <div class="header__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <button class="header__burger" aria-label="Menu">
+                  <span></span>
+              </button>
+          </div>
+      </nav>
   </div>
 </header>
-
+<div class="mobile-nav">
+  <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+  <ul class="mobile-nav__list">
+      <li><a href="#home" class="mobile-nav__link">Главная</a></li>
+      <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+      <li><a href="#benefits" class="mobile-nav__link">Возможности</a></li>
+      <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+      <li><a href="#blog" class="mobile-nav__link">Практики</a></li>
+      <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+  </ul>
+  <a href="#contact" class="btn btn--primary mobile-nav__btn">Начать сейчас</a>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="container">
+      <div class="hero__content">
+          <span class="hero__badge">Технология нового поколения</span>
+          <h1 class="hero__title">AI-инструменты для реальных задач</h1>
+          <p class="hero__text">Переосмыслите подход к развитию. Платформа года для тех, кто ценит время и хочет внедрить инновации в повседневную жизнь уже сегодня.</p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+  </div>
+  <div class="hero__visual">
+      <div class="hero__circle"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Легко разобраться без опыта</h2>
+          <p class="section-subtitle">Мы адаптировали сложные алгоритмы в понятные практики для работы, учебы и творчества.</p>
+      </div>
+      <div class="about__grid">
+          <div class="about__image">
+              <img src="/teron-holic/assets/one-CvGBp10M.jpg" alt="AI Interface">
+          </div>
+          <div class="about__info">
+              <div class="about__item">
+                  <h3>Быстрый и лёгкий старт</h3>
+                  <p>Подключение занимает всего 2 минуты. Никакого кода или сложных настроек.</p>
+              </div>
+              <div class="about__item">
+                  <h3>Удобная адаптация</h3>
+                  <p>Пошаговый путь, понятный каждому. Ваши задачи — наши решения.</p>
+              </div>
+              <a href="#contact" class="btn btn--primary">Открыть возможности</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="benefits" id="benefits">
+  <div class="container">
+      <div class="benefits__grid">
+          <div class="benefit-card">
+              <i data-lucide="zap"></i>
+              <h4>Технологии для вас</h4>
+              <p>Решения, которые меняют правила игры в вашей продуктивности.</p>
+          </div>
+          <div class="benefit-card">
+              <i data-lucide="trending-up"></i>
+              <h4>Стратегия роста</h4>
+              <p>Используйте AI как инструмент для создания пассивного дохода.</p>
+          </div>
+          <div class="benefit-card">
+              <i data-lucide="shield-check"></i>
+              <h4>Экспертная поддержка</h4>
+              <p>Методологии, доказавшие свою эффективность во всех странах ЕС.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__content">
+          <h2 class="section-title">Инновационная инфраструктура</h2>
+          <div class="innovations__list">
+              <div class="innovation-item">
+                  <span class="innovation-num">01</span>
+                  <div>
+                      <h4>Автоматизация рутины</h4>
+                      <p>Освободите до 10 часов в неделю для действительно важных дел.</p>
+                  </div>
+              </div>
+              <div class="innovation-item">
+                  <span class="innovation-num">02</span>
+                  <div>
+                      <h4>Генерация контента</h4>
+                      <p>Создавайте идеи и тексты на базе передовой цифровой инфраструктуры.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="container">
+      <h2 class="section-title">Практики сегодня</h2>
+      <div class="blog__grid">
+          <article class="blog-card">
+              <img src="/teron-holic/assets/two-kEKl18vm.jpg" alt="Blog 1">
+              <div class="blog-card__content">
+                  <span class="blog-tag">Кейс</span>
+                  <h4>Как AI меняет карьеру во Франции</h4>
+                  <p>Реальные истории людей, которые внедрили ИИ в работу.</p>
+                  <a href="#contact" class="blog-link">Читать далее →</a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <img src="/teron-holic/assets/three-DovNR9Zo.jpg" alt="Blog 2">
+              <div class="blog-card__content">
+                  <span class="blog-tag">Обучение</span>
+                  <h4>Топ-5 инструментов 2026 года</h4>
+                  <p>Обзор платформ, которые уже доступны в Европе.</p>
+                  <a href="#contact" class="blog-link">Читать далее →</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__box">
+          <h2 class="section-title">Начать сейчас</h2>
+          <p>Бесплатная консультация по всем вопросам внедрения AI.</p>
+
+          <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+              </div>
+              <div class="form-group">
+                  <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                  <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
+              </div>
+
+              <div class="form-captcha">
+                  <span id="captchaQuestion">5 + 3 = ?</span>
+                  <input type="number" id="captchaAnswer" placeholder="Ответ" required>
+              </div>
+
+              <label class="form-checkbox">
+                  <input type="checkbox" required>
+                  <span>Я согласен с <a href="./personal-data-policy.html">политикой данных</a></span>
+              </label>
+
+              <button type="submit" class="btn btn--primary">Отправить запрос</button>
+              <div id="formMessage" class="form-message"></div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col footer__col--info">
+              <a href="/" class="footer__logo">Teron-<span>Holic</span></a>
+              <p class="footer__text">
+                  Технологии нового поколения, адаптированные для повседневной жизни. Делаем AI понятным и полезным для каждого.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__list">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#about">О платформе</a></li>
+                  <li><a href="#benefits">Возможности</a></li>
+                  <li><a href="#innovations">Инновации</a></li>
+                  <li><a href="#blog">Блог</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Документы</h4>
+              <ul class="footer__list">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Data Policy</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Контакты</h4>
+              <ul class="footer__contact-list">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>24 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+33142928100">+33 1 42 92 81 00</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@teron-holic.blog">hello@teron-holic.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Teron-Holic. Платформа уже доступна в Европе. Предложение активно только в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div id="cookiePopup" class="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button id="acceptCookies" class="btn btn--primary">Принять</button>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>

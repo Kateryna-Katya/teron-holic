@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/teron-holic/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/teron-holic/assets/styles-BfnS8lDd.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+          <a href="/" class="header__logo">
+              Teron-<span>Holic</span>
+          </a>
+
+          <ul class="header__menu">
+              <li><a href="#about" class="header__link">О платформе</a></li>
+              <li><a href="#benefits" class="header__link">Возможности</a></li>
+              <li><a href="#innovations" class="header__link">Инновации</a></li>
+              <li><a href="#blog" class="header__link">Практики</a></li>
+              <li><a href="#contact" class="header__link">Контакты</a></li>
+          </ul>
+
+          <div class="header__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <button class="header__burger" aria-label="Menu">
+                  <span></span>
+              </button>
+          </div>
+      </nav>
   </div>
 </header>
-
+<div class="mobile-nav">
+  <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+  <ul class="mobile-nav__list">
+      <li><a href="#home" class="mobile-nav__link">Главная</a></li>
+      <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+      <li><a href="#benefits" class="mobile-nav__link">Возможности</a></li>
+      <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+      <li><a href="#blog" class="mobile-nav__link">Практики</a></li>
+      <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+  </ul>
+  <a href="#contact" class="btn btn--primary mobile-nav__btn">Начать сейчас</a>
+</div>
 
     <main>
       <div class="container">
@@ -39,19 +55,60 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col footer__col--info">
+              <a href="/" class="footer__logo">Teron-<span>Holic</span></a>
+              <p class="footer__text">
+                  Технологии нового поколения, адаптированные для повседневной жизни. Делаем AI понятным и полезным для каждого.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__list">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#about">О платформе</a></li>
+                  <li><a href="#benefits">Возможности</a></li>
+                  <li><a href="#innovations">Инновации</a></li>
+                  <li><a href="#blog">Блог</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Документы</h4>
+              <ul class="footer__list">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Data Policy</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Контакты</h4>
+              <ul class="footer__contact-list">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>24 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+33142928100">+33 1 42 92 81 00</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@teron-holic.blog">hello@teron-holic.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Teron-Holic. Платформа уже доступна в Европе. Предложение активно только в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>
